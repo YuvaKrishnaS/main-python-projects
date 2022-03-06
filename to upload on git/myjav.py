@@ -63,8 +63,8 @@ def sendEmail(to, content):
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.ehlo()
     server.starttls()
-    server.login('naveenprasad134847@gmail.com', 'Naveen@47')
-    server.sendmail('snavinekma@gmail.com', to, content)
+    server.login('YOUR EMAIL', 'YOUR PASS')# your mail and pass
+    server.sendmail('YOUR CHOICE', to, content) #to whom you are sending
     server.close()
 
 def CoronaVirus(Country):
@@ -252,10 +252,6 @@ if __name__ == "__main__":
 
         elif 'hello' in query:
             speak("hello sir")
-            print()
-
-        elif 'who is my father' in query:
-            speak("you farther's name is mr. naveen prasad. he is retired from navy and currently serving in Bank of India")
             print()
 
         elif 'why were you asleep' in query:
